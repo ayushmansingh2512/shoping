@@ -1,0 +1,30 @@
+.marquee-section{
+    display: flex; 
+    width: 100%;
+    margin: 80px 0;
+}
+
+.marquee{
+    display: flex;
+    width: 100%;
+    padding: 24px 0;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.marquee-para{
+    background: #fff;
+    color:#483C32;
+
+
+}
+
+.marrq{
+    font-size: 100px;
+}
+@media(max-width:800px){
+    .marrq{
+        font-size: 70px;
+    }
+}
+ 

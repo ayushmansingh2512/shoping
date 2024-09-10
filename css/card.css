@@ -1,0 +1,67 @@
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  width: 90%;
+ 
+}
+
+.card-section {
+  width: 100%;
+  background: #fff;
+  padding: 80px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-family: ;
+  flex-direction: column;
+}
+.our{
+  margin-bottom: 40px;
+}
+.slider-container {
+  background: linear-gradient(135deg, #d4e3f7, #e5e0e9, #f4cbd4);
+  display: flex;
+  position: relative;
+  width: 300px;
+   
+  margin: 10px ; /* Adjusted margin to ensure centering */
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%; /* Adjusted to be responsive within the card */
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #666;
+  background: transparent;
+}
+
+.prev {
+  left: 10px; /* Added padding to ensure they don’t overlap with the content */
+}
+
+.next {
+  right: 10px; /* Added padding to ensure they don’t overlap with the content */
+}

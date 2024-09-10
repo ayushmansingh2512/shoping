@@ -1,0 +1,135 @@
+ 
+
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    backdrop-filter: blur(5px);
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Align it to the left */
+    width: 100%; /* Make the navbar span the full width */
+     /* Set the background color to avoid transparency issues */
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 8px 16px; /* Adjust padding to prevent overlap */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin-right: 8px;
+ }
+
+ .list-item{
+    padding: 8px 16px;
+    font-size: 30px;
+    transition: 0.5s;
+
+ }
+
+
+ .list-item:hover{
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.04),5px 5px 5px #595757ba;
+    background:transparent;
+    backdrop-filter: blur(30px);
+ }
+h1{
+    font-size: 40px;
+    padding: 8px 16px;
+    font-family:lora ;
+    font-weight: 100;
+    color: #666;
+}
+
+.list-button{
+    background: #fff;
+    color: #000;
+    padding: 8px 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.sidebar{
+ display: none;
+}
+
+.sidebar .list{
+    padding-top:10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 275px;
+    z-index: 999;
+    background-color: #00000068;
+    background-color:bl ;
+    margin: 0;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1px);
+    backdrop-filter: blur(10px);
+
+ 
+   
+}
+.list-item2{
+    padding: 8px 16px;
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.list-item2:hover{
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.04),5px 5px 5px #141313ba;
+    background: #000;
+ }
+.list-button2{
+    
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidebar .list .list-button{
+  color:#fff;
+  background: transparent;
+  width: 100%;
+}
+
+.sidebar .list-item:hover{
+    cursor: pointer;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.04),5px 5px 5px #000000;
+    background: #000;
+ }
+ .menu{
+    display: none;
+ }
+ 
+
+@media(max-width:800px){
+    div ul .list-item{
+        display: none;
+    }
+
+    .menu{
+        display: flex;
+    }
+    .list-button{
+        display: none;
+    }
+}
+@media(max-width:450px){
+    .sidebar .list{
+        width: 100%;
+    
+     
+       
+    }
+}
+
+ 
